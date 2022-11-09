@@ -227,6 +227,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
    background-color: #188ce8;
+   outline: transparent;
 }
 
 /* FEATURES */
@@ -370,6 +371,7 @@ img {
 .social-link:hover,
 .social-link:focus {
    background-color: var(--accent-color);
+   outline-color: transparent;
 }
 
 .social-icon {
@@ -404,6 +406,7 @@ img {
 .client-link:hover,
 .client-link:focus {
    border-color: var(--accent-color);
+   outline: transparent;
 }
 
 .client-icon {
@@ -430,7 +433,7 @@ img {
 }
 
 .footer .logo {
-	padding: 0;
+   padding: 0;
 }
 
 .logo.studio {
@@ -482,6 +485,7 @@ img {
 .footer-block .social-link:hover,
 .footer-block .social-link:focus {
    background-color: var(--accent-color);
+   outline: -1px solid var(--accent-color);
 }
 
 .footer-block .social-icon {
@@ -518,6 +522,7 @@ img {
    color: var(--primary-white-color);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+   outline: transparent;
 }
 
 .projects-list {
@@ -526,8 +531,18 @@ img {
    flex-wrap: wrap;
 }
 
-.projects-list .item:hover,
-.projects-list .item:focus {
+.projects-list .item {
+   width: calc((100% - 30px * 2) / 3);
+}
+
+.projects-list .item:hover {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-list .link:focus {
+   display: block;
+   outline: transparent;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -549,7 +564,7 @@ img {
 }
 
 .project-text {
-	color: var(--primary-text-color);
+   color: var(--primary-text-color);
    font-size: 16px;
    line-height: 1.88;
 }
