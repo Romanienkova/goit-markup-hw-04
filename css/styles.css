@@ -30,7 +30,8 @@ p {
    margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
    margin: 0;
    padding: 0;
 
@@ -175,6 +176,7 @@ img {
 .hero {
    padding-top: 200px;
    padding-bottom: 200px;
+   margin: 0 auto;
 
    max-width: 1600px;
 
@@ -208,8 +210,8 @@ img {
 
 .hero-button {
    padding: 0;
-   width: 216px;
-   height: 50px;
+   min-width: 216px;
+   min-height: 50px;
    border-radius: 4px;
 
    background-color: var(--accent-color);
@@ -351,6 +353,7 @@ img {
    justify-content: center;
    align-items: center;
    gap: 10px;
+
    margin-top: 10px;
 }
 
@@ -391,6 +394,9 @@ img {
    justify-content: center;
    align-items: center;
 
+   width: 170px;
+   height: 92px;
+
    border: 1px solid var(--icons-color);
    border-radius: 4px;
 }
@@ -401,15 +407,11 @@ img {
 }
 
 .client-icon {
-   padding: 16px 32px;
-   width: 170px;
-   height: 92px;
-
    fill: var(--icons-color);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
    fill: var(--accent-color);
 }
 
@@ -428,7 +430,7 @@ img {
 }
 
 .footer .logo {
-   margin-bottom: 20px;
+	padding: 0;
 }
 
 .logo.studio {
@@ -477,7 +479,8 @@ img {
    background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-block .social-link:hover {
+.footer-block .social-link:hover,
+.footer-block .social-link:focus {
    background-color: var(--accent-color);
 }
 
@@ -546,6 +549,7 @@ img {
 }
 
 .project-text {
+	color: var(--primary-text-color);
    font-size: 16px;
    line-height: 1.88;
 }
